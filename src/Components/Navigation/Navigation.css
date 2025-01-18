@@ -1,0 +1,22 @@
+.Navigation {
+   display: flex;
+   height: 40px;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 50px;
+   box-sizing: border-box;
+   font-family: monospace;
+   font-weight: bold;
+   font-size: large;
+   position: relative;
+   z-index: 1;
+}
+
+.Navigation ul{
+padding: 0;
+margin: 0;
+list-style: none;
+display: flex;
+gap: 20px;
+}
+
