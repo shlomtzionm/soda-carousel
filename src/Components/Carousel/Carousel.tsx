@@ -23,17 +23,7 @@ function Carousel(): JSX.Element {
     }
   }, [leftMockup]);
 
-  useEffect(() => {
-    const refreshInterval = setInterval(() => {
-      if (next.current) {
-        next.current.click();
-      }
-    }, 5000);
-
-    // Cleanup interval on component unmount
-    return () => clearInterval(refreshInterval);
-  }, []); // Run only once when the component mounts
-
+  
   const handleNext = () => {
     setActive(prev => (prev + 1) % items.length);
     setLeftMockup(prev => prev + left_each_item);
